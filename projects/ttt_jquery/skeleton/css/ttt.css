@@ -1,0 +1,88 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: cursive, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+ul {
+  margin: 30px auto;
+  width: 300px;
+  border: 5px solid gold;
+
+}
+
+ul > li:hover {
+  background-color: gold;
+}
+
+li {
+  width: 96px;
+  height: 96px;
+  float: left;
+  border: 2px solid red;
+  background-color: black;
+  cursor: pointer;
+}
+
+.x, .o {
+  background: red;
+  cursor: default;
+}
+
+.x:hover, .o:hover {
+  background: white;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.game-over li {
+  color: green;
+  background: pink;
+  cursor: default;
+}
+
+.x:after, .o:after {
+  display: block;
+  width: 100%;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.x:after {
+  content: "x";
+}
+
+.o:after {
+  content: "o";
+}
+
+.winner-x .x,
+.winner-o .o {
+  background: green;
+  color: white;
+}
+
+figcaption {
+  font-size: 40px;
+}
